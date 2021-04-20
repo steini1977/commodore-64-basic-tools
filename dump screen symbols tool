@@ -9,7 +9,7 @@ rem ## dumps all screen symbols to the screen ##
 18 end
 rem write "run 10" and hit enter.
 rem move cursor on desire symbol,
-rem and move it by holding down delete (backspace).
+rem and move it by holding down backspace.
 rem when its to the most left, move cursor down.
 rem the screen will move up, scroll until the char is by the top left corner.
 rem write "print peek(1024)" and you will find the symbol number (0-255)
