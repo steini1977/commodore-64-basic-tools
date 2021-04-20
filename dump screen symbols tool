@@ -1,0 +1,15 @@
+rem ## dumps all screen symbols to the screen ##
+9 end
+10 rem screen symbols
+11 y=0:x=0:print chr$(147)
+12 for dt=0 to 255
+13 poke 1024+x*2+40*(y*2),dt
+14 x=x+1:if x=20 then x=0:y=y+1
+16 next dt
+18 end
+rem write "run 10" and hit enter.
+rem move cursor on desire symbol,
+rem and move it by holding down delete (backspace).
+rem when its to the most left, move cursor down.
+rem the screen will move up, scroll until the char is by the top left corner.
+rem write "print peek(1024)" and you will find the symbol number (0-255)
